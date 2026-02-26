@@ -69,10 +69,8 @@ print(f"Mean: {np.mean(final_results):.2f}, Variance: {np.var(final_results):.2f
 plt.figure(figsize=(10, 6))
 plt.hist(final_results, bins=range(min(final_results), max(final_results) + 2), 
          color='orange', edgecolor='black', align='left')
-#plt.axvline(16, color='red', linestyle='--', label='Ideal Target (Z=16)')
 plt.title(f'Distribution of Final Z over {trials} Runs ($Z = {X_input} \\times \\log_2 {Y_input}$)')
 plt.xlabel('Final Value of Z')
 plt.ylabel('Frequency')
-#plt.legend()
 plt.grid(axis='y', alpha=0.3)
 plt.show()
